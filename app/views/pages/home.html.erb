@@ -5,6 +5,6 @@
   <p>Hi <%= current_user.first_name %></p>
   <%= link_to("Log Out Here", destroy_user_session_path , class: 'btn btn-primary', method: :delete) %>
 <% else %>
-  <%= link_to("Sign Up Here", new_user_registration_path , class: 'btn btn-success') %>
+  <%= link_to("Sign Up Here", new_user_registration_path , class: 'btn btn-primary') %>
 
 <% end %>
